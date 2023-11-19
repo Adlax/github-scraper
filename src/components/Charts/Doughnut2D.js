@@ -8,9 +8,9 @@ import FusionCharts from "fusioncharts";
 // Include the chart type
 import Chart from "fusioncharts/fusioncharts.charts";
 // Include the theme as fusion
-import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
+import ZuneTheme from "fusioncharts/themes/fusioncharts.theme.zune";
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, CandyTheme);
+ReactFC.fcRoot(FusionCharts, Chart, ZuneTheme);
 
 const ChartComponent = ({ data }) => {
 	const chartConfigs = {
@@ -22,7 +22,7 @@ const ChartComponent = ({ data }) => {
 			// Chart Configuration
 			chart: {
 				caption: "Stars per language",
-				theme: "candy",
+				theme: "zune",
 				decimals: 0,
 				doughnutRadius: "45%",
 				showPercentValues: 0,

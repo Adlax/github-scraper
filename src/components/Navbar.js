@@ -7,7 +7,7 @@ const Wrapper = styled.nav`
 	background-color: var(--clr-white);
 	text-align: center;
 	display: grid;
-	grid-template-columns: auto auto 100px;
+	grid-template-columns: 1fr;
 	justify-content: center;
 	align-items: center;
 	gap: 1.5rem;
@@ -33,7 +33,14 @@ const Wrapper = styled.nav`
 `;
 
 const Navbar = () => {
-	return <Wrapper>Navbar component</Wrapper>;
+	const string = "John Doe";
+	return (
+		<Wrapper>
+			<h4>
+				Welcome, <strong>{string.toUpperCase()}</strong>
+			</h4>
+		</Wrapper>
+	);
 };
 
 export default Navbar;
